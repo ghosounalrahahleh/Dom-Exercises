@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #8: Color picker</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #colors {
+            width: 576px;
+            height: 216px;
+            border: 1px solid black;
+         
+        }
+        #selected {
+            margin-top: 5px;
+            padding: 5px;
+            text-align: center;
+            width: 150px;
+            height: 2em;
+            border: 1px solid black;
+            
+        }
+        .choice {
+            float:left;
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            margin: 1px;
+        }
+        .tiles{
+            width: calc(100% / 24);
+            height: calc(100% /9);
+            border: 1px solid black;
+            padding: .5px;
+        }
+    </style>
+  
+</head>
+<body>
+    <div id="colors"></div>
+    <div id="selected"></div>
+    <script src="js/exercise8.js"></script>
+</body>
+</html>
