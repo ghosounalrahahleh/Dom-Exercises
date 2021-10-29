@@ -14,14 +14,17 @@ function initGrid() {
   // TODO complete the rest
   var colorsDiv = document.querySelector("#colors");
   var selected = document.querySelector("#selected");
+
   colorsDiv.style.display = "flex";
   colorsDiv.style.flexWrap = "wrap";
+  
   for (i = 0; i < 216; i++) {
     var tiles = document.createElement("div");
     tiles.setAttribute("class", "tiles");
     colorsDiv.append(tiles);
     var color = colors[i];
     tiles.style.backgroundColor = color;
+    
     tiles.addEventListener("click", function (event) {
       var source = event.target;
         console.log(source);
@@ -30,6 +33,7 @@ function initGrid() {
       console.log(selsctedBgColor);
       //   to convert the rgb to hex value
       const rgb2hex = (rgb) =>
+      
         `#${rgb
           .match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/)
           .slice(1)

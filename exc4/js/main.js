@@ -1,10 +1,14 @@
 // change font-family from dropdown menu
 var text = document.getElementById("text");
-document
-    .getElementById("font_family")
-    .addEventListener("change", function changeFont(val) {
-        text.style.fontFamily = val.target.value;
-    });
+var fontFamily = document.getElementById('font_family');
+// document
+//     .getElementById("font_family")
+//     .addEventListener("change", function changeFont(val) {
+//         text.style.fontFamily = val.target.value;
+//     });
+fontFamily.addEventListener('change', function () {
+    text.style.fontFamily = fontFamily.value;
+})
 // change font-size from dropdown menu
 document
     .getElementById("font_size")

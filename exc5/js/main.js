@@ -15,8 +15,6 @@ pass1.onkeydown = function () {
     else password = true;
 };
 
-
-
 function submitForm(e) {
     var password = false;
   
@@ -28,6 +26,7 @@ function submitForm(e) {
     if (pass2.value !== pass1.value)
         message2.textContent = "The tow passwords didn't match!";
     else {
+        
         password = true;
 
 
@@ -41,7 +40,8 @@ function submitForm(e) {
 }
 pass2.onkeyup = function () {
     if (pass2.value === pass1.value)
-        document.getElementById("submitBtn").style.display = "block";
+       {  message2.textContent = "";
+           document.getElementById("submitBtn").style.display = "block";}
 }
 
 window.onload = function () {
